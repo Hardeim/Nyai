@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root,
+[data-tema="claro"] {
+  --marrom:        oklch(36% 0.07 50);
+  --marrom-2:      oklch(46% 0.08 50);
+  --marrom-suave:  oklch(97% 0.015 50);
+  --marrom-medio:  oklch(91% 0.03 50);
+  --verde:         oklch(50% 0.18 148);
+  --verde-claro:   oklch(60% 0.17 148);
+  --verde-suave:   oklch(96% 0.06 148);
+  --verde-medio:   oklch(87% 0.10 148);
+  --laranja:       oklch(68% 0.18 55);
+  --vermelho:      oklch(55% 0.22 25);
+  --vermelho-suave:oklch(96% 0.04 25);
+  --vermelho-medio:oklch(80% 0.08 25);
+  --azul:          oklch(55% 0.18 240);
+  --azul-suave:    oklch(95% 0.05 240);
+
+  --texto:         oklch(17% 0.03 50);
+  --texto-2:       oklch(42% 0.04 50);
+  --texto-mudo:    oklch(62% 0.03 50);
+  --borda:         oklch(91% 0.018 50);
+  --borda-2:       oklch(86% 0.025 50);
+  --fundo:         #fff;
+  --fundo-2:       oklch(98.8% 0.008 50);
+  --fundo-3:       oklch(96.5% 0.012 50);
+
+  --sombra:        0 1px 3px rgba(0,0,0,.06);
+}
+
+[data-tema="escuro"] {
+  --marrom:        oklch(70% 0.10 50);
+  --marrom-2:      oklch(60% 0.09 50);
+  --marrom-suave:  oklch(24% 0.025 50);
+  --marrom-medio:  oklch(35% 0.04 50);
+  --verde:         oklch(70% 0.18 148);
+  --verde-claro:   oklch(78% 0.17 148);
+  --verde-suave:   oklch(25% 0.05 148);
+  --verde-medio:   oklch(35% 0.10 148);
+  --laranja:       oklch(72% 0.16 55);
+  --vermelho:      oklch(70% 0.18 25);
+  --vermelho-suave:oklch(25% 0.04 25);
+  --vermelho-medio:oklch(40% 0.08 25);
+  --azul:          oklch(70% 0.16 240);
+  --azul-suave:    oklch(25% 0.05 240);
+
+  --texto:         oklch(95% 0.01 50);
+  --texto-2:       oklch(75% 0.02 50);
+  --texto-mudo:    oklch(55% 0.02 50);
+  --borda:         oklch(28% 0.015 50);
+  --borda-2:       oklch(35% 0.02 50);
+  --fundo:         oklch(16% 0.01 50);
+  --fundo-2:       oklch(20% 0.012 50);
+  --fundo-3:       oklch(24% 0.015 50);
+
+  --sombra:        0 1px 3px rgba(0,0,0,.4);
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--fundo-2);
+  color: var(--texto);
+  overflow: hidden;
+  font-size: 13px;
+  transition: background .2s, color .2s;
+}
+
+button, input, textarea, select { font-family: inherit; color: inherit; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--borda); border-radius: 4px; }

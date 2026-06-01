@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+dist-electron/
+build/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variáveis de ambiente (se usar .env no futuro)
+.env
+.env.local
+.env.*.local
+
+# IMPORTANTE: arquivos de config DO USUÁRIO (com chaves de API!).
+# Esses ficam em %APPDATA%/nyai no Windows, fora deste repo.
+# Mas se alguém der git add . dentro dessa pasta por engano:
+nyai-config.json
+nyai-memoria.json
