@@ -3,9 +3,6 @@
 Aplicativo desktop para **traduzir e reescrever mensagens** com diferentes tons.
 Possui sistema de **memória de estilo** que aprende seu jeito de escrever.
 
-> **Versão React** deste projeto — feita para portfólio com decisões de
-> arquitetura modernas e tipagem completa em TypeScript.
-
 ---
 
 ## Stack técnica
